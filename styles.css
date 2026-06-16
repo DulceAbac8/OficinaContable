@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat;
+    background-color: #5C9112;
+}
+header{
+    background-color: #5C9112;
+    text-align: center;
+}
+nav{
+    background-color: #66DAF4;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+li{
+    margin: 10px 20px;
+    font-size: 25px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+nav a:hover{
+    background-color: white;
+    border-radius: 5px;
+}
+.bienvenida{
+    text-align: center;
+    font-size: 22px;
+    margin: 20px;
+}
+.carrusel{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: auto;
+}
+.secuencia{
+    display: flex;
+    width: 200%;    
+    animation: slide 12s infinite;
+}
+.secuencia img{
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+}
+@keyframes slide{
+    30%{
+        transform: translateX(0);
+    }
+    60%{
+        transform: translateX(-700px);
+    }
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.myv{
+    width: 700px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+.mision, .vision{
+    padding: 10px;
+}
+.botones img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-top: 10px;
+}
+.botones{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+main{
+    text-align: center;
+}
+.info{
+    margin-top: 20px;
+    line-height: 25px;
+}
